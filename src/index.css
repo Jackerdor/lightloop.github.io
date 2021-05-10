@@ -1,0 +1,1169 @@
+@import url("//hello.myfonts.net/count/3daf44");
+  
+@font-face {
+  font-family: "Dismedia-Regular";
+  src: url('assets/fonts/font.woff2') format('woff2'), url('assets/fonts/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Manrope-Thin";
+  src: url('assets/fonts/thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url('assets/fonts/light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url('assets/fonts/regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url('assets/fonts/medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Manrope-Semibold";
+  src: url('assets/fonts/semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url('assets/fonts/bold.otf') format('opentype');
+}
+
+:root{
+  --gray: #181818;
+  --lgray: #555555;
+  --lgray2: #cecece;
+  --orange: #ff9c0a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor:default;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Dismedia-Regular";
+  font-size: 100px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.noverflow{
+  overflow: hidden;
+}
+
+.flex{
+  display: flex;
+}
+
+.padlr{
+  padding: 0 16px;
+}
+
+.cntrAll{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.row{
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.flex33{
+  flex: 33.3%
+}
+
+.flex66{
+  flex: 66.6%
+}
+
+.fullwh{
+  width: 100%;
+  height: 100%;
+}
+
+.fcol{
+  flex-direction: column;
+}
+
+.nav-grid-space{
+  display: inline-block;
+  height: 80px;
+  width: 100%;
+}
+
+.container{
+  font-family: "Manrope-Bold";
+  font-size: 10px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top:0;
+  min-width: 100%;
+  min-height: 100%;
+  height:500vh;
+  width:100%;
+  background-color:var(--gray);
+  overflow-x:hidden;
+  z-index: -100;
+}
+
+/*PAGE*/
+
+.landing-page-video{
+  height: 100vh;
+  width:100%;
+  background-position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  overflow-x:hidden;
+  margin:0px;
+  font-size: 0;
+}
+
+.videowrapper{
+  display: block;
+  width:50%;
+  height: 100%;
+  background-position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  overflow:hidden;
+  margin:0px;
+  font-size: 0;
+}
+
+.swiper{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  right:0;
+  z-index: 10000;
+  
+}
+
+.fullscreen-box{
+  color: var(--gray);
+  font-size: 12px;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: white;
+  bottom:0;
+  right:0;
+  margin: 40px;
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+
+.landing-content{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  overflow: hidden;
+  transform-origin: 0% 40%;
+  box-sizing: border-box;
+}
+
+.navigation{
+  display: flex;
+  position: fixed;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 3px;
+  height: 80px;
+  width:100vw;
+  z-index: 100;
+  top:0;
+  overflow-x:hidden;
+  /* background-color: var(--gray);
+  box-shadow: 0px 1px 1px #181818 ; */ 
+  opacity: 95%;
+  overflow: visible;
+  mix-blend-mode:;
+  list-style: none;
+  filter: drop-shadow(0px 0px 4px var(--gray));
+}
+
+.thinbar {
+  display: none;
+  position: absolute;
+  height: 1px;
+  width: 95%;
+  background-color: white;
+  left: 1.8%;
+  bottom: 0;
+}
+
+.navlogo-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  padding-left: 40px;
+}
+
+.navlogo{
+  width:100%;
+  height:100%;
+}
+
+.navlinks-wrapper{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  width: 120px;
+  align-content: center;
+  align-items: center;
+  padding-right: 80px;
+  list-style: none;
+  white-space: nowrap;
+  margin:0;
+  transform: perspective(500px) translateZ(-1px);
+}
+
+/* .nav-item {
+  
+} */
+
+.nav-links {
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.nav-links:hover {
+  color:var(--orange);
+  transition: all 0.2s ease-out;;
+}
+
+.navlinks-wrapper .a{
+  padding: 10px;
+}
+
+
+/*PAGE*/
+
+.fitScreen{
+  position: relative;
+  height:100vh;
+  width: 100%;
+  background-color: var(--gray);
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom:0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transform: perspective(500px) translateZ(-1px);
+}
+
+.about-wrapper{
+  display:inline-flex;
+  float:right;
+  justify-content: center;
+  flex-flow: row-reverse;
+  margin-left:auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  min-width: 0;
+  margin-right:2vw;
+  pointer-events: none;
+}
+
+.about-body{
+  font-family: "Manrope-Light";
+  color: white;
+  font-size: calc(0.5vw + 8px);
+  width: calc(32vw + 40px);
+  line-height: 26px;
+  word-wrap: break-word;
+  display: block;
+  position: relative;
+  float: right;
+  text-align: justify;
+  direction: rtl;
+  justify-content: flex-end;
+  flex-flow: row-reverse;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  transform-origin: 100% 100%;
+  min-width: 0;
+}
+
+.about-image{
+}
+
+.about-body h1{
+  font-family: "Manrope-Bold";
+  text-align: right;
+  color: var(--orange);
+  font-size: calc(1.2vw + 0.5rem);
+  letter-spacing: 0.2vw;
+  line-height: calc(2.4vw + 0.5rem);
+  margin-top:1.5vw;
+  margin-bottom:1vh;
+}
+
+.about-headers{
+  flex-direction: column;
+  display: inline-flex;
+  text-align: center;
+  align-items: end;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  min-width: 0;
+  transform: translateX(50px);
+}
+
+.about-headers svg{
+  width: 32vw;
+  /*transform:rotate(-1deg)translateX(0vw);*/
+  margin-top:1vw;
+}
+
+.bigger-header{
+  width: 200%;
+  transform: scale(110%);
+  transform-origin: 100% 0%;
+}
+
+.pad {
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+  overflow: auto;
+}
+
+.body-page-segment {
+  display:inline-block;
+  position: relative;
+  opacity: 100%;
+  height: 85%;
+  width: 100%;
+}
+
+.llogo-outline{
+  display: block;
+  position: relative;
+  width: 32vw;
+  left:0;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.click-tip{
+  position: absolute;
+  bottom: 4%;
+  font-family: "Manrope-Light";
+  font-size: 10px;
+  letter-spacing: 6px;
+  pointer-events: none;
+}
+
+.gallery-dots{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  content: "";
+  text-align: center;
+  /* outline: 1px solid var(--lgray); */
+  bottom:6%;
+  padding: 10px 5px;
+  z-index:2;
+}
+
+.bar-item{
+  display: flex;
+  flex-direction: row;
+  height: 12px;
+  width: 60px;
+  background-color: var(--lgray);
+  margin: 6px 6px;
+  transition: all 0.2s ease-out;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.bar-item:hover{
+  background-color: var(--orange);
+  transition: all 0.2s ease-out;
+}
+
+.bar-select{
+  outline: 1px solid white;
+  margin: 0px 5px;
+  border-radius: 4px;
+}
+
+.bar-progress{
+  height:100%;
+  width:40%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.outline-pad{
+  outline: 1px solid white;
+  padding: 6px 6px;
+}
+
+.outline-box{
+  content:"";
+  position: absolute;
+  background-image: url("assets/background_pattern.png");
+  background-size: 100px;
+  opacity: 5%;
+  outline: 2px solid rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  top:0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/*PAGE*/
+
+.works-wrapper{
+  display: inline-flex;
+  flex-direction: column;
+  bottom:0;
+  position: relative;
+  width: 100%;
+  height: 85%;
+  vertical-align: bottom;
+}
+
+.works-title{
+  position: absolute;
+  font-family: "Dismedia";
+  font-size: 100px;
+  line-height: 100px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  top:14%;
+  left:8%;
+  z-index: -1;
+}
+
+.works-selected-text{
+  margin-top:120px;
+  height: 26px;
+  width: 50%;
+  border-bottom: 1px solid var(--orange);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--orange);
+  color: transparent;
+  font-family: "Dismedia";
+  font-size: 24px;
+  text-align: end;
+}
+
+.carousel{
+  display: flex;
+  width:100%;
+  height:40%;
+  margin: 10px 0px;
+}
+
+.thumbnail1{
+  position: relative;
+  height:100%;
+  background-image: url('./assets/draw_thumbnail.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tn-focused{
+  width: 50%;
+  height:100%;
+}
+
+.tn-unfocused{
+  filter:grayscale();
+  height:90%;
+  width: 25%;
+  margin-top:16px;
+  
+}
+
+.unfocused-title1{
+  font-family: "Dismedia";
+  font-size: 40px;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--orange);
+  right:10%;
+  bottom:5%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.unfocused-title2{
+  font-family: "Dismedia";
+  font-size: 40px;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--orange);
+  left:10%;
+  bottom:5%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.thumbnail2{
+  position: relative;
+  background-image: url('./assets/joe_thumbnail.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thumbnail3{
+  position: relative;
+  background-image: url('./assets/draw_thumbnail.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gradient-rl{
+  height:100%;
+  width: 50px;
+  background: linear-gradient(90deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  position: absolute;
+}
+
+.gradient-rr{
+  height:100%;
+  width: 100px;
+  background: linear-gradient(270deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  position: absolute;
+  right:-0.5%;
+}
+
+.gradient-lr{
+  height:100%;
+  width: 50px;
+  background: linear-gradient(270deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  position: absolute;
+  right:0;
+}
+
+.gradient-ll{
+  height:100%;
+  width: 100px;
+  background: linear-gradient(90deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  position: absolute;
+}
+
+.title-box{
+  display:flex;
+  min-width: 50%;
+  height: 10%;
+  margin-bottom: 5px;
+  text-align: left;
+  vertical-align: middle;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--orange);
+}
+
+.title{
+  font-family: "Dismedia";
+  color: var(--orange);
+  margin-bottom:-18px;
+  margin-left:16px;
+  font-size: 80px;
+}
+
+.directed{
+  font-family: "Manrope-Regular";
+  text-transform: uppercase;
+  margin-left:12px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.directed p{
+  margin:0;
+}
+.directed h1{
+  font-family: "Manrope-Bold";
+  font-size: 28px;
+  line-height: 20px;
+  margin: 0;
+  margin-top:8px;
+}
+
+.tag-box{
+  display: flex;
+  min-width: 50%;
+  height: 5%;
+  justify-content: flex-start;
+  letter-spacing: 2px;
+}
+
+.info-header{
+  margin-left: 16px;
+  margin-bottom: -8px;
+  font-size: 32px;
+  font-family: "Dismedia";
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--orange);
+}
+
+.tags{
+  margin-left: 12px;
+  display: flex;
+}
+
+.tag-item{
+  padding: 2px 10px;
+  margin: 0px 6px;
+  color: var(--orange);
+  font-family: "Manrope-Light";
+  outline: 1px solid var(--orange);
+  border-radius: 4px;
+}
+
+.information-box{
+  font-family: "Manrope-Regular";
+  font-size: 16px;
+  min-width: 50%;
+  height: 20%;
+  margin-left:24px;
+  text-align:left;
+}
+
+/*PAGE*/
+
+.team-wrapper{
+  position: relative;
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: flex-end;
+  align-items: flex-end;
+  height: 85%;
+  width: 100%;
+}
+
+.team-flexl{
+  position: relative;
+  width:45%;
+  height:90%;
+}
+
+.team-flexr{
+  position: relative;
+  width:50%;
+  height:90%;
+}
+
+.member-photo-wrapper{
+  position: absolute;
+  display: flex;
+  top:-5%;
+  right:-10%;
+  width: 100%;
+  height:100%;
+}
+
+.member-photo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/jake_winkyface.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: visible;
+  z-index: 1;
+}
+
+
+.member-photo-gb{
+  position: absolute;
+  width:100%;
+  height: 200px;
+  background: linear-gradient(360deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  bottom:0;
+}
+
+.member-photo-gl{
+  position: absolute;
+  width:120px;
+  height:83%;
+  background: linear-gradient(90deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  left:0;
+  bottom:0;
+}
+
+.member-photo-gr{
+  position: absolute;
+  width:40px;
+  height:83%;
+  background: linear-gradient(270deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  right:0;
+  bottom:0;
+}
+
+.team-header{
+  
+}
+
+.team-title{
+  text-align: right;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: "Dismedia";
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  z-index: -1;
+  text-indent: 10px;
+}
+
+.team-title h1{
+  display: inline;
+}
+
+.member-title{
+  text-align: left;
+  margin-left: 20px;
+  line-height: 10px;
+  font-size: 24px;
+  color: var(--orange);
+  font-family: "Manrope-Semibold";
+}
+
+.member-title h1{
+  font-size: 40px;
+  font-family: "Manrope-Bold";
+  margin: 24px 0px;
+  color: white;
+}
+
+.team-links{
+
+}
+
+.biography-header{
+
+}
+
+.biography-information{
+
+}
+
+.team-navigator{
+  font-size: 20px;
+  position: absolute;
+  letter-spacing: 1px;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-family: "Manrope-Medium";
+  z-index: 10;
+  filter: drop-shadow(0px 0px 2px var(--gray));
+}
+
+.team-navigator a{
+  padding: 5px 10px;
+  transition: all 0.2s ease-out;
+  cursor:pointer;
+}
+
+.team-navigator a:hover{
+  color: var(--orange);
+  transition: all 0.2s ease-out;
+}
+
+.team-navigator sp{
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+  font-size: 30px;
+  color: var(--orange);
+  margin: -5px -0px;
+}
+
+.team-navigator p{
+  margin: 0px;
+}
+
+
+/*PAGE*/
+
+
+.button{
+  padding-left:60px;
+  padding:20px;
+}
+
+.footer-wrapper{
+  position: absolute;
+  height: calc(100% - 80px);
+  width:100%;
+  box-sizing: border-box;
+  bottom:0;
+}
+
+.footer-title{
+  position: relative;
+  width: 100vw;
+  height: 8vh;
+  margin-left: 6vw;
+  margin-top:40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.gradient-box{
+  position: absolute;
+  background: linear-gradient(360deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  opacity:60%;
+  width: 100%;
+  height: 100%;
+}
+.gradient-box2{
+  position: absolute;
+  background: linear-gradient(360deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  opacity:60%;
+  width: 100%;
+  height: 45%;
+  top:10%;
+}
+
+.footer-title svg{
+  position: absolute;
+  height:100%;
+  left:0;
+}
+
+.footer-decor{
+  position: absolute;
+  background-image: url('./assets/lightloop-mockup-elements_0004_Layer-3-4.png');
+  background-repeat: no-repeat;
+  background-position:bottom right;
+  background-size:contain;
+  height: 100%;
+  width: 100%;
+  bottom:0;
+  right:0;
+  pointer-events: none;
+}
+
+.footer-body{
+  height: 60%;
+  padding-top: 1vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-desc{
+  flex: 0 0 20%;
+  font-family: 'Manrope-Regular';
+  font-size: calc(10px + 1vw);
+  text-align: justify;
+  text-justify: inter-word;
+  height: 80%;
+  width: 30%;
+  margin: 4vw;
+  margin-top: 2vw;
+  margin-left:6vw;
+  line-height: calc(16px + 1vw);
+}
+
+.footer-desc b{
+  font-family: 'Manrope-Semibold';
+  color:var(--orange);
+}
+
+.footer-desc h1{
+  font-family: 'Manrope-Bold';
+  font-size: 2.6vw;
+  text-align:left;
+  margin-bottom: 0px;
+  line-height: 3vw;
+  margin-top: 0;
+}
+
+.footer-desc p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.footer-links-container{
+  position: relative;
+}
+
+.footer-links{
+  position: absolute;
+  font-family: "Manrope-Regular";
+  font-size: 10px;
+  text-align: left;
+  justify-content:flex-start;
+  align-items: flex-start;
+  background-image: url(./assets/zap_pattern_repeat.png);
+  background-size: 18px;
+  width: 100%;
+  padding: 30px 0px;
+  color: var(--gray);
+}
+
+.footer-links a{
+  font-family: "Manrope-Semibold";
+  font-size: 20px;
+  padding: 6px 12px;
+  background-color: var(--gray);
+  color: var(--orange);
+  box-shadow: 0px 0px 8px 2px var(--gray);
+}
+
+.social-media{
+  height:100%;
+  margin-left: 4vw;
+  margin-bottom:8px;
+}
+
+.social-media a{
+  height:100%;
+  background-color: var(--orange);
+  color: var(--gray);
+  border-radius: 2px;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 0px 8px 2px var(--gray);
+  outline: 1px dotted var(--orange)
+}
+
+.social-media h1{
+  font-family: 'Manrope-Bold';
+  font-size: 36px;
+  margin: 0px;
+  line-height: 40px;
+  background-color: var(--gray);
+  color: var(--orange);
+  padding: 10px 20px;
+  word-wrap: normal;
+  box-shadow: 0px 0px 12px 2px var(--gray);
+}
+
+.social-media p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-out;;
+}
+
+.social-media a:hover{
+  cursor: pointer;
+  background-color:white;
+  color:var(--gray);
+}
+
+
+.details{
+  margin: 0;
+  height:100%;
+  margin-left:6vw;
+  cursor:text;
+}
+
+.details h1{
+  font-family: 'Manrope-Bold';
+  font-size: 36px;
+  margin: 0px;
+  line-height: 40px;
+  background-color: var(--gray);
+  color: var(--orange);
+  padding: 10px 20px;
+  word-wrap: normal;
+  box-shadow: 0px 0px 12px 2px var(--gray);
+  cursor:default;
+}
+
+.details p{
+  margin: 20px 0px;
+}
+
+.details w{
+  background-color: var(--orange);
+  padding: 2px 4px;
+  box-shadow: 0px 0px 8px 2px var(--gray);
+  cursor:default;
+}
+
+/*PAGE*/
+
+@media (max-width: 1000px) {
+
+  .landing-page-video {
+
+  }
+
+  .fitScreen {
+    background-color: var(--gray);
+    transition: all 0.2s ease-out;
+  }
+
+  .about-cont{
+    flex-direction: column-reverse;
+    justify-items:center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .about-wrapper{
+    justify-content: flex-start;
+    margin:auto;
+    margin-top:140px;
+    text-align: center;
+    z-index: 10;
+    height: 100%;
+    width: 90%;
+  }
+
+  .about-body{
+    width: 95%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .about-body h1{
+    text-align: center;
+  }
+
+
+  .llogo-outline{
+    margin: auto;
+    width:50%;
+
+  }
+
+  .about-image{
+    position: absolute;
+    transform: translateY(-200px);
+    width: calc(600px + 20vw);
+  }
+
+  .bigger-header{
+    transform: scale(100%);
+  }
+
+  .about-headers{
+    transform: translateX(0px);
+    margin-bottom:10px;
+  }
+
+  .about-headers svg{
+    width: 300px;
+  }
+
+  .works-title{
+    font-size: calc(8vw + 20px);
+  }
+
+  .title-box{
+
+  }
+  
+  .title{
+    font-size:calc( 40px + 3vw);
+  }
+  
+  .directed{
+    font-size: calc(20px);
+  }
+  .directed p{
+    margin:0;
+  }
+  .directed h1{
+    font-size: calc(18px + 1vw);
+    margin-top:calc( 10px - 1vw / 4)
+  }
+
+  .tag-box{
+
+  }
+  
+  .info-header{
+    font-size:calc(2vw + 10px);
+  }
+  
+  .tags{
+    font-size: calc(0.5vw + 5px);
+    letter-spacing: 0.2vw;
+  }
+  
+  .tag-item{
+    font-size:;
+  }
+  
+  .information-box{
+
+  }
+
+  .footer-links{
+    flex-direction: column;
+  }
+
+  .footer-links a{
+    font-size: 18px;
+  }
+
+  .footer-desc{
+    width:60%;
+  }
+
+  .footer-decor{
+    transform: translateX(8vw);
+  }
+
+  .details h1{
+    margin-bottom:15px;
+  }
+
+  .social-media{
+    margin-top: 4vw;
+    margin-left: 6vw;
+  }
+
+  .social-media h1{
+    margin-bottom:30px;
+  }
+}
