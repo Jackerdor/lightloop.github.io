@@ -4,6 +4,7 @@ import video from './assets/showreel3.mp4'
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+
 const transition = { duration:  1.4, ease: [0.2, 0.01, -0.05, 0.9] };
 
 /* const showButton = () => {
@@ -232,7 +233,7 @@ function App() {
         <div className="team-wrapper">
           <div className="team-flexl">
             <div className="team-title">
-              <div className="gradient-box"></div>
+              <div className="gradient-box-team"></div>
               THE<h1>TEAM</h1>
               </div>
             <div className="member-photo-wrapper">
@@ -249,9 +250,15 @@ function App() {
               <p></p>
               LEAD 3D ARTIST
             </div>
-            <div className="team-links"></div>
-            <div className="biography-header"></div>
-            <div className="biography-information"></div>
+            <div className="team-links">
+              <a className="website-link">VISIT WEBSITE</a>
+              <a className="orb-link"><i class="fab fa-linkedin-in"></i></a>
+              <a className="orb-link"><i class="fab fa-artstation"></i></a>
+            </div>
+            <div className="biography-header"><h1>BIOGRAPHY</h1><div className="biography-line"></div></div>
+            <div className="biography-information"> 
+            Technical problem solving within the 3D side to Visual Effect and Animation is what I enjoy most. I am a 3D generalist as I enjoy all aspects of 3D, from modeling to rendering. Along with being a 3D generalist I also work on sound design and cinematograph.<p></p> Merlin was the series which made me want to work in this industry and still to this day is one of my personal favorites. Outside of work I am an avid Mountain biker.
+            </div>
           </div>
           <div className="outline-box"></div>
           <div className="team-navigator"> 
