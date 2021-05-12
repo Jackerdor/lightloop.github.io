@@ -1,0 +1,73 @@
+
+
+TODOS and QUESTIONS
+
+GENERAL.
+----------------------
+
+- Need SEO. Next JS or Gatsby or use prerender.io or abandon React?
+
+- How would I deploy on a GoDaddy hosting service?
+
+- Optimisation? Should elements be lazy loaded for performance?
+
+
+- Create a pre-loading screen that finishes once all the data is loaded
+
+- Make smooth scrolling (Click nav buttons to be taken to page which also changes browser history)
+	> Either have scroll wheel be smoother
+	> Or scrolling smoothly lock onto each page section
+
+- Add slight parallax elements to each page
+
+- Use intersection observer to fade page in and out when entering / leaving.
+
+- When page is reloaded restore to last page the user was in with data intact
+
+- Need to make a fullscreen wrapper for videos being played
+
+
+NAV BAR
+----------------------
+
+- Need to make menu collapsible for mobile
+
+
+PAGE 1. <LANDING PAGE>
+----------------------
+
+- Need to be able to manipulate svg inline tag height and width. Make them half when screen is 1000 px less.
+
+
+PAGE 2. <ABOUT>
+----------------------
+
+- How will new data be loaded in?
+
+- Make slider box input new data / html through clicking or timeout
+
+
+PAGE 3. <PROJECTS>
+----------------------
+
+- Need to make a smooth carousel for projects
+	> Horizontal, can be dragged, scrolled or clicked on thumbnails to navigate
+	> Information will be loaded below the thumbnail
+	> In unfocused mode
+
+- Able to make videos play from thumbnails when moused over?
+
+- Maybe make slider select random movie and slide to it every X seconds if not interacted with and all thumbnails = unfocused
+
+
+PAGE 4. <THE TEAM>
+----------------------
+
+- When mousing over the team members' names show a thumbnail bubble of members' face next to the cursor
+
+- Clicking member loads relevant information and image
+
+
+PAGE 5. <CONNECT>
+----------------------
+
