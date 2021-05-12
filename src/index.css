@@ -127,6 +127,8 @@ code {
   z-index: -100;
 }
 
+
+
 /*PAGE*/
 
 .landing-page-video{
@@ -200,7 +202,6 @@ code {
   box-shadow: 0px 1px 1px #181818 ; */ 
   opacity: 95%;
   overflow: visible;
-  mix-blend-mode:;
   list-style: none;
 }
 
@@ -1034,10 +1035,17 @@ code {
   justify-content:flex-start;
   align-items: flex-start;
   background-image: url(./assets/zap_pattern_repeat.png);
-  background-size: 18px;
+  background-position: 0px 0px;
+  background-size: 24px;
+  /*animation: animatedBackground 240s linear infinite;*/
   width: 100%;
   padding: 30px 0px;
   color: var(--gray);
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
 
 .footer-links a{
@@ -1227,7 +1235,6 @@ code {
   }
   
   .tag-item{
-    font-size:;
   }
   
   .information-box{

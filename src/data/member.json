@@ -1,0 +1,177 @@
+
+{    
+    "member": [
+
+
+        {
+            "id":"1",
+            "name":"Aidan Lonergan",
+            "role":"Director / Co-Producer / Rigger",
+            "image": {
+                "name":"aidan",
+                "posX":null
+            },
+            "website":"www.aidanlonergan.com",
+            "linkedin":"https://www.linkedin.com/in/aidanjlonergan/",
+            "artstation":null,
+            "biography":"I love stylised visuals! Mainly inspired by media such as Journey & Love, Death and Robots. Constructing unique characters and telling stories through them is my passion (and job) as a technical animator. In my spare time, I enjoy running and baking (I make a mean souffle if I do say so myself)."
+        },
+
+        {
+            "id":"2",
+            "name":"Sandeep Taludhar",
+            "role":"Co-Producer / 3D Artist",
+            "image": {
+                "name":"sandeep",
+                "posX":null
+            },
+            "website":"https://www.sandeepvfx.com/",
+            "linkedin":"https://www.linkedin.com/in/sandeep-tuladhar",
+            "artstation":"https://www.artstation.com/sandeepvfx",
+            "biography":"Modelling creatures, characters and architecture is what I love doing, I’ve always loved animals and how they move, interact and the way they communicate, it's simply amazing. I enjoy all aspects of 3D particularly modelling and grooming. Outside of VFX I’m an avid Bagel baker, Yoga enthusiast and Reader."
+        },
+
+        {
+            "id":"3",
+            "name":"Jake Newton",
+            "role":"Lead 3D / Generalist",
+            "image": {
+                "name":"jake",
+                "posX":null
+            },
+            "website":"https://www.jakenewton.co.uk/",
+            "linkedin":"https://www.linkedin.com/in/jake-newton1/",
+            "artstation":"https://www.artstation.com/cycodev1",
+            "biography":"Technical problem solving within the 3D side to Visual Effect and Animation is what I enjoy most. I am a 3D generalist as I enjoy all aspects of 3D, from modeling to rendering. Along with being a 3D generalist I also work on sound design and cinematograph.. Merlin was the series which made me want to work in this industry and still to this day is one of my personal favorites. Outside of work I am an avid Mountain biker."
+        },
+
+        {
+            "id":"4",
+            "name":"Martin Kamminga",
+            "role":"3D Generalist",
+            "image": {
+                "name":"martin",
+                "posX":null
+            },
+            "website":"https://www.behance.net/martinkamminga",
+            "linkedin":"https://www.linkedin.com/in/martinkamminga97",
+            "artstation":"https://www.artstation.com/martinkamminga",
+            "biography":"I am a 3D enthusiast who loves modeling, texturing, lighting and rendering. I enjoy creating both photorealistic visuals and stylized work. I love taking on challenging projects and visualizing the ideas of the people I am working with to the best of my ability. If I am not sitting down to get work done, I am either at the gym or spending time with friends and family."
+        },
+
+        {
+            "id":"5",
+            "name":"Alfie Mitchell",
+            "role":"3D Generalist",
+            "image": {
+                "name":"alfie",
+                "posX":null
+            },
+            "website":"www.am-3d.com",
+            "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
+            "artstation":null,
+            "biography":"My passion for VFX lies in 3D Generalism and hard-surface modelling. In my freetime I enjoy Cycling, Volleyball and making pop-up cards. VFX Movie scenes that have inspired me the most were the Pirates of the caribbean - Sinking of HMS Endeavour for its relentless physics, drama and destruction & then the Forest Scene - Sherlock Holmes: A Game of Shadows for its extreme cinematography and slow motion. "
+        },
+
+        {
+            "id":"6",
+            "name":"Christopher Fernandes",
+            "role":"2D Lead / Compositor / FX artist",
+            "image": {
+                "name":"chris",
+                "posX":null
+            },
+            "website":null,
+            "linkedin":"https://www.linkedin.com/in/christopher-fernandes-11b246a9/",
+            "artstation":null,
+            "biography":null
+        },
+
+        {
+            "id":"7",
+            "name":"Billy Daniel Allen",
+            "role":"3D Animator / Storyboard Artist",
+            "image": {
+                "name":"billy",
+                "posX":null
+            },
+            "website":"www.am-3d.com",
+            "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
+            "artstation":null,
+            "biography":"I am a keen animator from Bristol (and fan of Bristol Rovers), I have spent 4 years at Escape Studios studying computer animation and look forward to many more years in the industry! The thing I love the most about animation is injecting life into characters and seeing my shot work in the final edit. As a creative to the core, I also enjoy playing guitar, piano and banjo!"
+        },
+
+        {
+            "id":"8",
+            "name":"Maciej Ousch",
+            "role":"3D Animation Lead",
+            "image": {
+                "name":"maciej",
+                "posX":null
+            },
+            "website":null,
+            "linkedin":null,
+            "artstation":null,
+            "biography":null
+        },
+
+        {
+            "id":"9",
+            "name":"Jack Billing",
+            "role":"Graphic Designer / Web Dev / Concept Artist",
+            "image": {
+                "name":"jack",
+                "posX":null
+            },
+            "website":"https://www.jackbilling.com",
+            "linkedin":"https://www.linkedin.com/in/jack-billing",
+            "artstation":"https://www.artstation.com/crazygecko",
+            "biography":"My passion for 3D and art in general has stemmed from playing games and doodling since my early childhood. This helped form my fascination for the processes and outcomes to art direction and coding. Outside of this, my hobbies include parkour and searching through youtube endlessly for my dopamine fix. I am the epitome of a lazy artist"
+        },
+
+        {
+            "id":"10",
+            "name":"Adam Philips",
+            "role":"3D Artist",
+            "image": {
+                "name":"adam",
+                "posX":null
+            },
+            "website":"https://aafphillips.wixsite.com/adamphillipsvfx ",
+            "linkedin":"https://www.linkedin.com/in/adam-phillips-895b37192/ ",
+            "artstation":null,
+            "biography":null
+        },
+
+        {
+            "id":"11",
+            "name":"Tijan Holder",
+            "role":"2D Artist",
+            "image": {
+                "name":"tijan",
+                "posX":null
+            },
+            "website":null,
+            "linkedin":null,
+            "artstation":null,
+            "biography":null
+        },
+
+        {
+            "id":"12",
+            "name":"Alex Angert",
+            "role":"FX Artist / TD",
+            "image": {
+                "name":"alex",
+                "posX":null
+            },
+            "website":"https://www.linkedin.com/in/alexangert/",
+            "linkedin":"https://www.artstation.com/purge",
+            "artstation":null,
+            "biography":null
+        }
+
+
+    ]
+    
+}
