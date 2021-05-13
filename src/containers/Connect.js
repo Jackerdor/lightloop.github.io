@@ -27,9 +27,9 @@ function Connect() {
                 <div className="details">
                   <h1>Contact Us</h1>
                   <p></p>
-                  <w>EMAIL</w><a>support@lightloopstudios.com</a>
+                  <i class="fas fa-envelope"></i><a>support@lightloopstudios.com</a>
                   <p></p>
-                  <w>PHONE</w><a>118-247-GIVE-US-A-CALL</a>
+                  <i class="fas fa-phone"></i><a>118-247-GIVE-US-A-CALL</a>
                 </div>
                 <div className="social-media">
 
@@ -37,7 +37,7 @@ function Connect() {
                   <p></p>
                   <a>LinkedIn</a>
                   <p></p>
-                  <a>Instagram</a>
+                  <a href="https://www.instagram.com/lightloopstudio/" target="_blank" style={{"text-decoration":"none"}}>Instagram</a>
                   <p></p>
                   <a>Twitter</a>
                   <p></p>

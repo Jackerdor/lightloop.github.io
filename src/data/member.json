@@ -1,6 +1,5 @@
 
-{    
-    "member": [
+[
 
 
         {
@@ -9,7 +8,8 @@
             "role":"Director / Co-Producer / Rigger",
             "image": {
                 "name":"aidan",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"www.aidanlonergan.com",
             "linkedin":"https://www.linkedin.com/in/aidanjlonergan/",
@@ -23,7 +23,8 @@
             "role":"Co-Producer / 3D Artist",
             "image": {
                 "name":"sandeep",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://www.sandeepvfx.com/",
             "linkedin":"https://www.linkedin.com/in/sandeep-tuladhar",
@@ -37,7 +38,8 @@
             "role":"Lead 3D / Generalist",
             "image": {
                 "name":"jake",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://www.jakenewton.co.uk/",
             "linkedin":"https://www.linkedin.com/in/jake-newton1/",
@@ -51,7 +53,8 @@
             "role":"3D Generalist",
             "image": {
                 "name":"martin",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://www.behance.net/martinkamminga",
             "linkedin":"https://www.linkedin.com/in/martinkamminga97",
@@ -65,7 +68,8 @@
             "role":"3D Generalist",
             "image": {
                 "name":"alfie",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"www.am-3d.com",
             "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
@@ -79,7 +83,8 @@
             "role":"2D Lead / Compositor / FX artist",
             "image": {
                 "name":"chris",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":null,
             "linkedin":"https://www.linkedin.com/in/christopher-fernandes-11b246a9/",
@@ -93,7 +98,8 @@
             "role":"3D Animator / Storyboard Artist",
             "image": {
                 "name":"billy",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"www.am-3d.com",
             "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
@@ -107,21 +113,23 @@
             "role":"3D Animation Lead",
             "image": {
                 "name":"maciej",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
-            "website":null,
+            "website":"https://osuchmaciej3.wixsite.com/animation",
             "linkedin":null,
-            "artstation":null,
-            "biography":null
+            "artstation":"https://www.linkedin.com/in/maciej-osuch-5083b3126",
+            "biography":"My passion for animation is in bringing the characters into life. This process amazes me every single day. Each character is different and so animating them. I’m glad I can share joy & entertainment with the audience through the medium of animation."
         },
 
         {
             "id":"9",
             "name":"Jack Billing",
-            "role":"Graphic Designer / Web Dev / Concept Artist",
+            "role":"Graphic Designer / Web Dev / 3D Artist",
             "image": {
                 "name":"jack",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://www.jackbilling.com",
             "linkedin":"https://www.linkedin.com/in/jack-billing",
@@ -135,7 +143,8 @@
             "role":"3D Artist",
             "image": {
                 "name":"adam",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://aafphillips.wixsite.com/adamphillipsvfx ",
             "linkedin":"https://www.linkedin.com/in/adam-phillips-895b37192/ ",
@@ -146,15 +155,16 @@
         {
             "id":"11",
             "name":"Tijan Holder",
-            "role":"2D Artist",
+            "role":"2D Compositor / Editor",
             "image": {
                 "name":"tijan",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":null,
-            "linkedin":null,
+            "linkedin":"https://uk.linkedin.com/in/tijan-holder-26a3501a5",
             "artstation":null,
-            "biography":null
+            "biography":"Lover of all things Adobe with some additional skills in Nuke. "
         },
 
         {
@@ -163,7 +173,8 @@
             "role":"FX Artist / TD",
             "image": {
                 "name":"alex",
-                "posX":null
+                "bgpos":"center",
+                "posX":"-70px"
             },
             "website":"https://www.linkedin.com/in/alexangert/",
             "linkedin":"https://www.artstation.com/purge",
@@ -173,5 +184,3 @@
 
 
     ]
-    
-}

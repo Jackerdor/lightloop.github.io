@@ -1,11 +1,33 @@
-{
-    "about":[
+[
 
         {
-            "body":"",
-            "image":"",
+            "body":"<h1>A VFX PRODUCTION HOUSE</h1> We are a team of artists, whose creative output involves a plethora of skills within the field of multimedia, vfx and animation <p></p> Our goal is to empower ideas through every stage of development before bringing them out into the world. We are primarily focused in advertisements and short film but we are capable of expanding to other areas of media",
+            "image":[
+                {
+                    "svg":""
+                }
+            ],
+            "header":["",""]
+        },
+
+        {
+            "body":"<h1>Something about something</h1>We are a remote studio based in the UK, founded on the principles of a holacratic system. We firmly believe that each artist holds power & potential to fully show their creativity. This structure and method allows us to keep a much closer team which in turn creates a better final result.  ",
+            "image":[
+                {
+                    "svg":""
+                }
+            ],
+            "header":["",""]
+        },
+
+        {
+            "body":"<h1>Something about something</h1> Founded in 2020, our company was created amidst a massive global shift in the way we all do business, & with that, the way the creative industries operate. Due to the nature of this we work fully remotely, we have developed tools and a workflow to maximise productivity and media creation. We use state of the art tools and softwares to keep the standard of work to the highest possible standard and up to date with industry trends.",
+            "image":[
+                {
+                    "svg":""
+                }
+            ],
             "header":["",""]
         }
 
     ]
-}

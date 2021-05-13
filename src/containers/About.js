@@ -1,4 +1,18 @@
+import React, {useState} from 'react'
+import aboutData from '../data/about.json'
+
 function About() {
+
+const [slide,setSlide] = React.useState(0)
+
+function handleClick(event) {
+  const id = event.target.id;
+  setTimeout(() => {
+    setSlide(id)
+  }, 10);
+}
+
+
     return (
         <div className="fitScreen">
         <div className="nav-grid-space"></div>
@@ -32,11 +46,8 @@ function About() {
 
                 </div>
                 
-                <div className="about-body cntrAll">
-                  <h1>A VFX PRODUCTION HOUSE</h1>
-                  We are a team of artists, whose creative output involves a plethora of skills within the field of multimedia, vfx and animation 
+                <div className="about-body cntrAll" dangerouslySetInnerHTML={ {__html: aboutData[slide].body} }>
                   
-                  <p>Our goal is to empower ideas through every stage of development before bringing them out into the world. We are primarily focused in advertisements and short film but we are capable of expanding to other areas of media</p>
                 </div>
                 
               </div>
@@ -60,9 +71,9 @@ function About() {
             <div className="outline-box"></div>
             <div className="cntrAll click-tip">- CLICK TO SWITCH -</div>
             <div className="gallery-dots cntrAll">
-              <div className="bar-select"><div className="bar-item"><div className="bar-progress"></div></div></div>
-              <div className="bar-item"></div>
-              <div className="bar-item"></div>
+              <div className="bar-select"><div id="0" className="bar-item" onClick={handleClick}><div className="bar-progress"></div></div></div>
+              <div id="1" className="bar-item" onClick={handleClick}></div>
+              <div id="2" className="bar-item" onClick={handleClick}></div>
             </div>
           </div>
         </div>

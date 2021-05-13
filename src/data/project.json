@@ -1,10 +1,9 @@
-{
-    "Project" : [
+[
 
         {
-            "id":"",
+            "id":"0",
             "title":"The Bait",
-            "thumbnail":"",
+            "thumbnail":"bait_thumbnail.jpg",
             "image":"",
             "movie":"",
             "description":"A robot programmed to clean comes across his greatest challenge in the form of acoffee stain. To what lengths will he go to complete his task? Winner of the Sci-on film festival’s director’s choice award.",
@@ -12,9 +11,9 @@
         },
 
         {
-            "id":"",
+            "id":"1",
             "title":"Retfӕrdig",
-            "thumbnail":"",
+            "thumbnail":"shoes_thumbnail.png",
             "image":"",
             "movie":"",
             "description":"Look good, feel good, do good. Retfӕrdig’s new running shoes are made from recycled and sustainable materials, so whether you’re crushing it on the track or popping to the shops. Be confident that you’re doing it with the Earth.",
@@ -22,19 +21,19 @@
         },
 
         {
-            "id":"",
+            "id":"2",
             "title":"Viktor & Rolf",
-            "thumbnail":"",
+            "thumbnail":"perfume_thumbnail.png",
             "image":"",
             "movie":"",
-            "description":"",
+            "description":"Explosive. Powerful. Bursting with flowers. Viktor & Rolf present their new fragrance, Flowerbomb.",
             "tags":["Advert","3D"]
         },
 
         {
-            "id":"",
+            "id":"3",
             "title":"Draw",
-            "thumbnail":"",
+            "thumbnail":"draw_thumbnail.png",
             "image":"",
             "movie":"",
             "description":"Two kings battle for mastery of the chessboard.",
@@ -42,9 +41,9 @@
         },
 
         {
-            "id":"",
+            "id":"4",
             "title":"Joe",
-            "thumbnail":"",
+            "thumbnail":"joe_thumbnail.png",
             "image":"",
             "movie":"",
             "description":"A robot programmed to clean comes across his greatest challenge in the form of acoffee stain. To what lengths will he go to complete his task? Winner of the Sci-on film festival’s director’s choice award.",
@@ -52,15 +51,14 @@
         },
 
         {
-            "id":"",
+            "id":"5",
             "title":"Blitzkrieg",
-            "thumbnail":"",
+            "thumbnail":"blitzkrieg_thumbnail.png",
             "image":"",
             "movie":"",
-            "description":"",
+            "description":"From visionary Jake Newton, come this gritty tale of war. Watch in horror as an allySpitfire is shot from the skies by a lone Nazi Focke-Wulf. A gripping short with a gripping story.",
             "tags":["Short Film","Animation","Live Action","3D"]
         }
 
 
     ]
-}

@@ -8,7 +8,7 @@ import About from './containers/About';
 import Projects from './containers/Projects';
 import Members from './containers/Members';
 import Connect from './containers/Connect';
-
+import projectData from './data/project.json'
 
 
 
@@ -74,7 +74,9 @@ function App() {
       delay: 0.5,
       duration: 2,
       ease: [0.3, 0.01, 0.5, 1],
-    }}} className="swiper"></motion.div>
+    }}} className="swiper">
+      
+    </motion.div>
 
       <Navbar />
       <Home />
