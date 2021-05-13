@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Jackerdor/lightloop.github.io.git/static/css/main.f22df992.chunk.css",
-    "main.js": "/Jackerdor/lightloop.github.io.git/static/js/main.d11c7c08.chunk.js",
-    "main.js.map": "/Jackerdor/lightloop.github.io.git/static/js/main.d11c7c08.chunk.js.map",
-    "runtime-main.js": "/Jackerdor/lightloop.github.io.git/static/js/runtime-main.af46b0a0.js",
-    "runtime-main.js.map": "/Jackerdor/lightloop.github.io.git/static/js/runtime-main.af46b0a0.js.map",
-    "static/js/2.2587dd53.chunk.js": "/Jackerdor/lightloop.github.io.git/static/js/2.2587dd53.chunk.js",
-    "static/js/2.2587dd53.chunk.js.map": "/Jackerdor/lightloop.github.io.git/static/js/2.2587dd53.chunk.js.map",
-    "static/js/3.6188b5ba.chunk.js": "/Jackerdor/lightloop.github.io.git/static/js/3.6188b5ba.chunk.js",
-    "static/js/3.6188b5ba.chunk.js.map": "/Jackerdor/lightloop.github.io.git/static/js/3.6188b5ba.chunk.js.map",
-    "index.html": "/Jackerdor/lightloop.github.io.git/index.html",
-    "static/css/main.f22df992.chunk.css.map": "/Jackerdor/lightloop.github.io.git/static/css/main.f22df992.chunk.css.map",
-    "static/js/2.2587dd53.chunk.js.LICENSE.txt": "/Jackerdor/lightloop.github.io.git/static/js/2.2587dd53.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Jackerdor/lightloop.github.io.git/static/media/thin.e7946a02.otf",
-    "static/media/showreel3.30acfee9.mp4": "/Jackerdor/lightloop.github.io.git/static/media/showreel3.30acfee9.mp4"
+    "main.css": "/lightloop.github.io/static/css/main.bdefc942.chunk.css",
+    "main.js": "/lightloop.github.io/static/js/main.d11c7c08.chunk.js",
+    "main.js.map": "/lightloop.github.io/static/js/main.d11c7c08.chunk.js.map",
+    "runtime-main.js": "/lightloop.github.io/static/js/runtime-main.c116a9ac.js",
+    "runtime-main.js.map": "/lightloop.github.io/static/js/runtime-main.c116a9ac.js.map",
+    "static/js/2.2587dd53.chunk.js": "/lightloop.github.io/static/js/2.2587dd53.chunk.js",
+    "static/js/2.2587dd53.chunk.js.map": "/lightloop.github.io/static/js/2.2587dd53.chunk.js.map",
+    "static/js/3.6188b5ba.chunk.js": "/lightloop.github.io/static/js/3.6188b5ba.chunk.js",
+    "static/js/3.6188b5ba.chunk.js.map": "/lightloop.github.io/static/js/3.6188b5ba.chunk.js.map",
+    "index.html": "/lightloop.github.io/index.html",
+    "static/css/main.bdefc942.chunk.css.map": "/lightloop.github.io/static/css/main.bdefc942.chunk.css.map",
+    "static/js/2.2587dd53.chunk.js.LICENSE.txt": "/lightloop.github.io/static/js/2.2587dd53.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/lightloop.github.io/static/media/thin.e7946a02.otf",
+    "static/media/showreel3.30acfee9.mp4": "/lightloop.github.io/static/media/showreel3.30acfee9.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.af46b0a0.js",
+    "static/js/runtime-main.c116a9ac.js",
     "static/js/2.2587dd53.chunk.js",
-    "static/css/main.f22df992.chunk.css",
+    "static/css/main.bdefc942.chunk.css",
     "static/js/main.d11c7c08.chunk.js"
   ]
 }
