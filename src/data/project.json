@@ -3,6 +3,7 @@
         {
             "id":"0",
             "title":"The Bait",
+            "directed":"Billy Allen and Aidan Lonergan",
             "thumbnail":"bait_thumbnail.jpg",
             "image":"",
             "movie":"",
@@ -13,6 +14,7 @@
         {
             "id":"1",
             "title":"Retfӕrdig",
+            "directed":null,
             "thumbnail":"shoes_thumbnail.png",
             "image":"",
             "movie":"",
@@ -23,6 +25,7 @@
         {
             "id":"2",
             "title":"Viktor & Rolf",
+            "directed":"Martin Kamminga",
             "thumbnail":"perfume_thumbnail.png",
             "image":"",
             "movie":"",
@@ -33,6 +36,7 @@
         {
             "id":"3",
             "title":"Draw",
+            "directed":"Martin Kamminga",
             "thumbnail":"draw_thumbnail.png",
             "image":"",
             "movie":"",
@@ -43,6 +47,7 @@
         {
             "id":"4",
             "title":"Joe",
+            "produced":"Aidan Lonergan",
             "thumbnail":"joe_thumbnail.png",
             "image":"",
             "movie":"",
@@ -53,6 +58,7 @@
         {
             "id":"5",
             "title":"Blitzkrieg",
+            "directed":"Jake Newton",
             "thumbnail":"blitzkrieg_thumbnail.png",
             "image":"",
             "movie":"",

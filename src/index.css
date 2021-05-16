@@ -43,7 +43,11 @@
   --orange: #ff9c0a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor:default;
+  cursor:none !important;
+}
+
+:hover{
+  cursor: none !important;
 }
 
 body {
@@ -52,6 +56,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a:link { 
+  text-decoration: none; 
+  color: inherit; 
+ }
+
+a:visited { 
+  text-decoration: none; 
+  color: inherit; 
+ }
+
+a:focus { 
+  text-decoration: none; 
+  color: inherit; 
+ }
+
+ a:hover, a:active { 
+  text-decoration: none; 
+  color: inherit; 
+ }
+
 
 h1 {
   font-family: "Dismedia";
@@ -127,6 +152,37 @@ code {
   z-index: -100;
 }
 
+.viewer-wrapper{
+  display:flex;
+  position: fixed;
+  width: 100%;
+  height: 105%;
+  background-color: rgba(24, 24, 24, 0.95);;
+  z-index: 1000;
+  justify-content:center;
+  align-items: center;
+}
+
+.viewer{
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background-color: var(--gray);
+  z-index: 100;
+}
+
+.viewer-back{
+  position: absolute;
+  font-family: "Manrope-Regular";
+  bottom: 9%;
+  letter-spacing: 4px;
+  
+}
+
+.viewer-object{
+  
+}
+
 
 
 /*PAGE*/
@@ -152,6 +208,7 @@ code {
   overflow:hidden;
   margin:0px;
   font-size: 0;
+  transform: perspective(500px) translateZ(-2px);
 }
 
 .swiper{
@@ -203,6 +260,16 @@ code {
   opacity: 95%;
   overflow: visible;
   list-style: none;
+  pointer-events: none;
+}
+
+.nav-gradient{
+  height:10%;
+  width:100%;
+  background: linear-gradient(180deg, rgba(24,24,24,255), rgba(24,24,24,0));
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .thinbar {
@@ -225,6 +292,7 @@ code {
 .navlogo{
   width:100%;
   height:100%;
+  pointer-events:visible;
 }
 
 .navlinks-wrapper{
@@ -256,6 +324,7 @@ code {
   margin-left: 0.5rem;
   transition: all 0.2s ease-out;
   text-transform: uppercase;
+  pointer-events:visible;
 }
 
 .nav-links:hover {
@@ -502,6 +571,11 @@ code {
   width:fit-content;
   height:100%;
   
+}
+
+.carousel-padding{
+  width: 700px;
+  height: 100%;
 }
 
 .thumbnail{
@@ -926,6 +1000,24 @@ code {
   font-size: 30px;
   color: var(--orange);
   margin: -5px -0px;
+}
+
+.member-cursor{
+  position: absolute;
+  outline: 3px solid var(--orange);
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  pointer-events:none;
+  transform: translate(-50%, -50%);
+  z-index:1000;
+  filter: drop-shadow(0px 0px 4px var(--orange));
+}
+
+.member-cursor:hover{
+
 }
 
 .team-navigator p{

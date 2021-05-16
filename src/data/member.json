@@ -50,7 +50,7 @@
         {
             "id":"4",
             "name":"Martin Kamminga",
-            "role":"3D Generalist",
+            "role":"3D Generalist / Look Dev",
             "image": {
                 "name":"martin",
                 "bgpos":"center",
@@ -89,7 +89,7 @@
             "website":null,
             "linkedin":"https://www.linkedin.com/in/christopher-fernandes-11b246a9/",
             "artstation":null,
-            "biography":null
+            "biography":"I am a 2D Compositor, Roto and prep artist. In my spare time I like to draw or learn how to create various FX in Houdini. I enjoy creating photo realistic or stylized scenes for any specific content. Besides having a passion for VFX I also enjoy cooking."
         },
 
         {
@@ -134,7 +134,7 @@
             "website":"https://www.jackbilling.com",
             "linkedin":"https://www.linkedin.com/in/jack-billing",
             "artstation":"https://www.artstation.com/crazygecko",
-            "biography":"My passion for 3D and art in general has stemmed from playing games and doodling since my early childhood. This helped form my fascination for the processes and outcomes to art direction and coding. Outside of this, my hobbies include parkour and searching through youtube endlessly for my dopamine fix. I am the epitome of a lazy artist"
+            "biography":"My passion for 3D and art in general has stemmed from playing games and doodling since my early childhood. This helped form my fascination for the processes and outcomes to art direction. Outside of this, my hobbies include still playing video games, parkour and searching through youtube endlessly for my dopamine fix. I am the epitome of a lazy artist. Do not hire me."
         },
 
         {
@@ -149,7 +149,7 @@
             "website":"https://aafphillips.wixsite.com/adamphillipsvfx ",
             "linkedin":"https://www.linkedin.com/in/adam-phillips-895b37192/ ",
             "artstation":null,
-            "biography":null
+            "biography":"I am fascinated by the sciences and the universe at large. Combined with my admiration for architecture and my educational background in film and cinematography, I find as a 3D generalist I often work on projects that inspire and intrigue me. I have a particular interest in photorealism, whilst also enjoying the creative freedom that comes with stylised projects. Among typical hobbies, in my spare time I enjoy practicing my photography; improving my artist eye in general."
         },
 
         {
@@ -179,7 +179,7 @@
             "website":"https://www.linkedin.com/in/alexangert/",
             "linkedin":"https://www.artstation.com/purge",
             "artstation":null,
-            "biography":null
+            "biography":"I am primarily an FX Artist with an avid affection towards creating procedural realistic and fantasy environments. I enjoy both the technical and creative challenges of the Visual Effects industry and the ones that are found within my disciplines."
         }
 
 

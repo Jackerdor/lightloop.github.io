@@ -1,15 +1,24 @@
 import React, {useState} from 'react'
 import aboutData from '../data/about.json'
+import {motion} from 'framer-motion'
+
+const variants = {
+  fadein: {opacity:1, y:0,},
+  fadeout: {opacity:0, y:-40}
+}
 
 function About() {
 
 const [slide,setSlide] = React.useState(0)
+const [isTransitioning, setIsTransitioning] = React.useState(false)
 
 function handleClick(event) {
   const id = event.target.id;
+  setIsTransitioning(isTransitioning => !isTransitioning)
   setTimeout(() => {
+    setIsTransitioning(isTransitioning => !isTransitioning)
     setSlide(id)
-  }, 10);
+  }, 500);
 }
 
 
@@ -18,7 +27,7 @@ function handleClick(event) {
         <div className="nav-grid-space"></div>
         <div className="body-page-segment">
           <div className="about-cont fullwh flex cntrAll">
-            <div className="column rightcol padlr flex">
+            <motion.div animate={isTransitioning ? "fadeout" : "fadein"} variants={variants} className="column rightcol padlr flex">
               <div className="about-wrapper fcol cntrAll">
                 <div className="about-headers">
 
@@ -51,8 +60,8 @@ function handleClick(event) {
                 </div>
                 
               </div>
-            </div>
-            <div className="about-image column">
+            </motion.div>
+            <motion.div animate={isTransitioning ? "fadeout" : "fadein"} variants={variants} className="about-image column">
               <svg className="llogo-outline" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 682.65 511.85">
               <line x1="0.25" y1="463.34" x2="0.25" y2="40.58" fill="none" stroke="#ff9c0a" stroke-width="0.5" stroke-dasharray="2 2"/>
               <line x1="682.4" y1="471.06" x2="682.4" y2="48.3" fill="none" stroke="#ff9c0a" stroke-width="0.5" stroke-dasharray="2 2"/>
@@ -67,7 +76,7 @@ function handleClick(event) {
               <path d="M322.13,330.5a5.09,5.09,0,0,1,2.19,4,4.57,4.57,0,0,1-6.4,4.33,5.79,5.79,0,0,0-6.79,1.21,5,5,0,0,0-.94,5.85,4.81,4.81,0,0,1-.42,5.31c-1.26,1.61-4.29,1.94-6.1,1.1a5.52,5.52,0,0,0-6.05,1.43,5,5,0,0,0-.94,5.85,4.71,4.71,0,0,1-6.93,6.11l-37.83-26.91a5.06,5.06,0,0,1-2.19-4,4.57,4.57,0,0,1,6.39-4.34,5.77,5.77,0,0,0,6.79-1.2,5,5,0,0,0,.94-5.85l-.2-.4a4.69,4.69,0,0,1-.41-1.89,4.56,4.56,0,0,1,6.39-4.34,5.75,5.75,0,0,0,6.79-1.21,5,5,0,0,0,.94-5.85,4.83,4.83,0,0,1,.42-5.31,4.77,4.77,0,0,1,6.51-.8Z" transform="translate(0 0)" fill="none" stroke="#ff9c0a" stroke-miterlimit="10" stroke-width="2"/>
               <path d="M323.88,322.59l-30.47-21a2.7,2.7,0,0,1-.07-4.37l5.46-4a2.61,2.61,0,0,1,3.4.26l25,25a2.74,2.74,0,0,1,.79,2A2.63,2.63,0,0,1,323.88,322.59Z" transform="translate(0 0)" fill="none" stroke="#ff9c0a" stroke-miterlimit="10" stroke-width="2"/>
               </svg>
-            </div>
+            </motion.div>
             <div className="outline-box"></div>
             <div className="cntrAll click-tip">- CLICK TO SWITCH -</div>
             <div className="gallery-dots cntrAll">

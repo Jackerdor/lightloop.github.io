@@ -2,26 +2,74 @@ import React, {useEffect, useState} from 'react';
 import {motion, useAnimation} from 'framer-motion'
 import memberData from '../data/member.json';
 
-const list = {
-  visible: {opacity:1},
-  hidden: {opacity:0},
+const variants = {
+  fadein: {opacity:1, y:0,
+  transition:{
+    staggerChildren: 0.5,
+  }}, 
+  fadeout: {opacity:0, y:-40,
+  transition:{
+    staggerChildren: 0.5,
+  }},
 }
+
+const item = {
+  fadein: { opacity: 1, y:0 },
+  fadeout: { opacity: 0, y:0 }
+}
+
 
 
 function Members() {
 
-  
-  const controls = useAnimation()
-
   const [id, setId] = React.useState(2)
+  
+  const [hasWebsite, setHasWebsite] = React.useState('block')
+  const [hasLinkedin, setHasLinkedin] = React.useState('block')
+  const [hasArtstation, setHasArtstation] = React.useState('block')
+
+  const websiteCheck = (id) => {
+    if (memberData.[id].website == null){
+      setHasWebsite('none')
+    } else {
+      setHasWebsite('block')
+    }}
+
+  const linkedInCheck = (id) => {
+    if (memberData.[id].linkedin == null){
+      setHasWebsite('none')
+    } else {
+      setHasWebsite('block')
+    }}
+
+const artstationCheck = (id) => {
+    if (memberData.[id].artstation == null){
+      setHasArtstation('none')
+    } else {
+      setHasArtstation('block')
+    }}
+
   function handleClick(event) {
-    const id = event.target.id;
+
+    const idMember = event.target.id;
+    if (idMember == id){
+      return
+    }
+    else{
+    setIsChanging(isChanging => !isChanging)
+    console.log(hasWebsite)
     setTimeout(() => {
-      setId(id)
-    }, 10);
+      setId(idMember)
+      websiteCheck(idMember)
+      linkedInCheck(idMember)
+      artstationCheck(idMember)
+      setIsChanging(isChanging => !isChanging)
+      console.log(hasWebsite)
+    }, 400);
+  }
   }
 
-
+const [isChanging, setIsChanging] = useState(false)
 
   /* useEffect(() => {
     
@@ -31,38 +79,37 @@ function Members() {
       <div className="fitScreen">
       <div className="nav-grid-space"></div>
       <div className="team-wrapper">
-        <motion.div initial="hidden" animate="visible" variants={list} className="team-flexl">
+        <div className="team-flexl">
           <div className="team-title">
             <div className="gradient-box-team"></div>
             THE<h1>TEAM</h1>
             </div>
-          <div className="member-photo-wrapper">
+          <motion.div animate={isChanging ? "fadeout" : "fadein"} variants={variants} className="member-photo-wrapper">
             <div className="member-photo" style={{backgroundImage:`url(http://localhost:3000/${memberData.[id].image.name}.png)`}}>
               <div className="member-photo-gl"></div>
               <div className="member-photo-gb"></div>
               <div className="member-photo-gr"></div>
             </div>
-          </div>
-        </motion.div>
-        <motion.div animate={controls} className="team-flexr">
-          <div className="member-title">
+          </motion.div>
+        </div>
+        <motion.div animate={isChanging ? "fadeout" : "fadein"} variants={variants} className="team-flexr">
+          <motion.div variants={item} className="member-title">
             <h1>{memberData.[id].name}</h1>
             <p></p>
             {memberData.[id].role}
-          </div>
-          <div className="team-links">
-            <a className="website-link">VISIT WEBSITE</a>
-
-            <a className="orb-link"><i class={"fab fa-linkedin-in"}></i></a>
-            <a className="orb-link"><i class="fab fa-artstation"></i></a>
-          </div>
-          <div className="biography-header"><h1>BIOGRAPHY</h1><div className="biography-line"></div></div>
-          <div className="biography-information"> 
+          </motion.div>
+          <motion.div variants={item} className="team-links">
+            <a className="website-link" href={memberData.[id].website} target="_blank" style={{textDecoration:'none', display:hasWebsite}}>VISIT WEBSITE</a>
+            <a className="orb-link" href={memberData.[id].linkedin} target="_blank" style={{textDecoration:'none', display:hasLinkedin}}><i class="fab fa-linkedin-in"></i></a>
+            <a className="orb-link" href={memberData.[id].artstation} target="_blank" style={{textDecoration:'none', display:hasArtstation}}><i class="fab fa-artstation"></i></a>
+          </motion.div>
+          <motion.div variants={item} className="biography-header"><h1>BIOGRAPHY</h1><div className="biography-line"></div></motion.div>
+          <motion.div variants={item} className="biography-information"> 
           {memberData.[id].biography}
-          </div>
+          </motion.div>
         </motion.div>
         <div className="outline-box"></div>
-        <motion.div animate={controls} className="team-navigator"> 
+        <motion.div className="team-navigator"> 
         <a id="0" onClick={handleClick}>AIDAN LONERGAN</a><sp>|</sp>
         <a id="1" onClick={handleClick}>SANDEEP TALUDHAR</a><sp>|</sp>
         <a id="2" onClick={handleClick}>JAKE NEWTON</a><sp>|</sp>

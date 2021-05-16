@@ -8,19 +8,15 @@ import About from './containers/About';
 import Projects from './containers/Projects';
 import Members from './containers/Members';
 import Connect from './containers/Connect';
-import projectData from './data/project.json'
+import Cursor from './components/Cursor';
+import Viewer from './components/Viewer';
+
+
+
 
 
 
 const transition = { duration:  1.4, ease: [0.2, 0.01, -0.05, 0.9] };
-
-/* const showButton = () => {
-  if(window.innerWidth <=960) {
-      setButton(false)
-  } else {
-      setButton(true);
-  }      
-}; */
 
 const pathVariants = {
   hidden: {
@@ -53,21 +49,21 @@ const unhideVariant = {
 
 function App() {
 
-/*  const showButton = () => {
+const [navButton, setNavButton] = useState(false)
+
+const showNavButton = () => {
+  console.log(navButton)
     if(window.innerWidth <=960) {
-        setButton(false)
+        setNavButton(false)
     } else {
-        setButton(true);
+        setNavButton(true);
     }      
   };
 
-  useEffect(() => {
-      showButton()
-  }, []);
-
-  window.addEventListener('resize', ); */
+  /* window.addEventListener('resize', showNavButton); */
 
   return (
+
   <Router>
   <div className="container noverflow">
     <motion.div initial="" animate={{width: 0, transition: {
@@ -75,17 +71,20 @@ function App() {
       duration: 2,
       ease: [0.3, 0.01, 0.5, 1],
     }}} className="swiper">
-      
-    </motion.div>
 
-      <Navbar />
+  </motion.div>
+    <div className="nav-gradient"></div>
+      
+      <Viewer setDisplay='false' />
+      <Navbar on={navButton} />
       <Home />
       <About />
       <Projects />
       <Members />
       <Connect />
-
-  </div>
+      <Cursor />
+      
+    </div>
   </Router>
   );
 }

@@ -82,8 +82,10 @@ function Navbar() {
                     Connect
                 </Link>
             </li>
+            <li><i class="fas fa-bars"></i></li>
           </ul>
         <div className="thinbar"></div>
+      
       </motion.div>
     )
 }
