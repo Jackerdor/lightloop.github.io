@@ -4,14 +4,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { useElementScroll } from "framer-motion";
 
 function Projects() {
-  const navRef = useRef();
   const carouselRef = useRef();
   const { scrollX } = useElementScroll(carouselRef);
-  const projectRef = [];
+  const projectRefs = useRef([]);
+  projectRefs.current = [];
 
   const clickHandler = (e) => {
-    console.log(projectRef.thumbnail);
+    console.log(ProjectCard.key);
   };
+
+const addToRefs = (el) => {
+  console.log(el)
+}
 
   return (
     <div className="fitScreen">
@@ -20,20 +24,20 @@ function Projects() {
         <div className="cntrAll works-selected-text">SELECTED</div>
 
         <div className="carousel-wrapper" ref={carouselRef}>
-          <div className="cntrAll carousel" ref={navRef}>
+          <div className="cntrAll carousel">
             <div className="carousel-padding"></div>
 
             {projectData.map((project, index) => (
               <ProjectCard
-                id={project.id}
-                ref={(index) => (this.elementRefs[index] = projectRef)}
+                key={project.id}
+                ref={el => (projectRefs.current = [...projectRefs.current, el])}
                 thumbnail={project.thumbnail}
                 onClick={clickHandler}
                 range={[
                   600 + 500 * index - window.innerWidth / 2,
                   800 + 500 * index - window.innerWidth / 2,
                   1000 + 500 * index - window.innerWidth / 2,
-                  1300 + 500 * index - window.innerWidth / 2,
+                  1200 + 500 * index - window.innerWidth / 2,
                 ]}
                 boi={scrollX}
               />
@@ -48,23 +52,23 @@ function Projects() {
 
         <div className="cntrAll title-box">
           <div className="title" onClick={clickHandler}>
-            DRAW
+            THE BAIT
           </div>
           <div className="directed">
             Directed by <p></p>
-            <h1>Martin Kamminga</h1>
+            <h1>Aidan Lonergan</h1>
           </div>
         </div>
         <div className="cntrAll tag-box">
           <div className="info-header">DESCRIPTION</div>
           <div className="tags">
-            <div class="tag-item">SHORT FILM</div>
+            <div class="tag-item">ADVERT</div>
             <div class="tag-item">ANIMATION</div>
-            <div class="tag-item">LIVE ACTION</div>
+            <div class="tag-item">AWARENESS</div>
           </div>
         </div>
         <div className="cntrAll information-box">
-          Two kings battle for mastery of the chessboard.
+          Don't let your best friend fall victim to dog baiting. Be vigiliant.
         </div>
         <div className="works-title">
           <div className="gradient-box"></div>PROJECTS

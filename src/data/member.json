@@ -12,6 +12,7 @@
                 "posX":"-70px"
             },
             "website":"www.aidanlonergan.com",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/aidanjlonergan/",
             "artstation":null,
             "biography":"I love stylised visuals! Mainly inspired by media such as Journey & Love, Death and Robots. Constructing unique characters and telling stories through them is my passion (and job) as a technical animator. In my spare time, I enjoy running and baking (I make a mean souffle if I do say so myself)."
@@ -27,6 +28,7 @@
                 "posX":"-70px"
             },
             "website":"https://www.sandeepvfx.com/",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/sandeep-tuladhar",
             "artstation":"https://www.artstation.com/sandeepvfx",
             "biography":"Modelling creatures, characters and architecture is what I love doing, I’ve always loved animals and how they move, interact and the way they communicate, it's simply amazing. I enjoy all aspects of 3D particularly modelling and grooming. Outside of VFX I’m an avid Bagel baker, Yoga enthusiast and Reader."
@@ -42,6 +44,7 @@
                 "posX":"-70px"
             },
             "website":"https://www.jakenewton.co.uk/",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/jake-newton1/",
             "artstation":"https://www.artstation.com/cycodev1",
             "biography":"Technical problem solving within the 3D side to Visual Effect and Animation is what I enjoy most. I am a 3D generalist as I enjoy all aspects of 3D, from modeling to rendering. Along with being a 3D generalist I also work on sound design and cinematograph.. Merlin was the series which made me want to work in this industry and still to this day is one of my personal favorites. Outside of work I am an avid Mountain biker."
@@ -56,7 +59,8 @@
                 "bgpos":"center",
                 "posX":"-70px"
             },
-            "website":"https://www.behance.net/martinkamminga",
+            "website":null,
+            "behance":"https://www.behance.net/martinkamminga",
             "linkedin":"https://www.linkedin.com/in/martinkamminga97",
             "artstation":"https://www.artstation.com/martinkamminga",
             "biography":"I am a 3D enthusiast who loves modeling, texturing, lighting and rendering. I enjoy creating both photorealistic visuals and stylized work. I love taking on challenging projects and visualizing the ideas of the people I am working with to the best of my ability. If I am not sitting down to get work done, I am either at the gym or spending time with friends and family."
@@ -72,6 +76,7 @@
                 "posX":"-70px"
             },
             "website":"www.am-3d.com",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
             "artstation":null,
             "biography":"My passion for VFX lies in 3D Generalism and hard-surface modelling. In my freetime I enjoy Cycling, Volleyball and making pop-up cards. VFX Movie scenes that have inspired me the most were the Pirates of the caribbean - Sinking of HMS Endeavour for its relentless physics, drama and destruction & then the Forest Scene - Sherlock Holmes: A Game of Shadows for its extreme cinematography and slow motion. "
@@ -87,6 +92,7 @@
                 "posX":"-70px"
             },
             "website":null,
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/christopher-fernandes-11b246a9/",
             "artstation":null,
             "biography":"I am a 2D Compositor, Roto and prep artist. In my spare time I like to draw or learn how to create various FX in Houdini. I enjoy creating photo realistic or stylized scenes for any specific content. Besides having a passion for VFX I also enjoy cooking."
@@ -101,7 +107,8 @@
                 "bgpos":"center",
                 "posX":"-70px"
             },
-            "website":"www.am-3d.com",
+            "website":null,
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/alfie-mitchell-01760b1aa/",
             "artstation":null,
             "biography":"I am a keen animator from Bristol (and fan of Bristol Rovers), I have spent 4 years at Escape Studios studying computer animation and look forward to many more years in the industry! The thing I love the most about animation is injecting life into characters and seeing my shot work in the final edit. As a creative to the core, I also enjoy playing guitar, piano and banjo!"
@@ -117,8 +124,9 @@
                 "posX":"-70px"
             },
             "website":"https://osuchmaciej3.wixsite.com/animation",
-            "linkedin":null,
-            "artstation":"https://www.linkedin.com/in/maciej-osuch-5083b3126",
+            "behance":null,
+            "linkedin":"https://www.linkedin.com/in/maciej-osuch-5083b3126",
+            "artstation":null,
             "biography":"My passion for animation is in bringing the characters into life. This process amazes me every single day. Each character is different and so animating them. I’m glad I can share joy & entertainment with the audience through the medium of animation."
         },
 
@@ -132,6 +140,7 @@
                 "posX":"-70px"
             },
             "website":"https://www.jackbilling.com",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/jack-billing",
             "artstation":"https://www.artstation.com/crazygecko",
             "biography":"My passion for 3D and art in general has stemmed from playing games and doodling since my early childhood. This helped form my fascination for the processes and outcomes to art direction. Outside of this, my hobbies include still playing video games, parkour and searching through youtube endlessly for my dopamine fix. I am the epitome of a lazy artist. Do not hire me."
@@ -147,6 +156,7 @@
                 "posX":"-70px"
             },
             "website":"https://aafphillips.wixsite.com/adamphillipsvfx ",
+            "behance":null,
             "linkedin":"https://www.linkedin.com/in/adam-phillips-895b37192/ ",
             "artstation":null,
             "biography":"I am fascinated by the sciences and the universe at large. Combined with my admiration for architecture and my educational background in film and cinematography, I find as a 3D generalist I often work on projects that inspire and intrigue me. I have a particular interest in photorealism, whilst also enjoying the creative freedom that comes with stylised projects. Among typical hobbies, in my spare time I enjoy practicing my photography; improving my artist eye in general."
@@ -162,6 +172,7 @@
                 "posX":"-70px"
             },
             "website":null,
+            "behance":null,
             "linkedin":"https://uk.linkedin.com/in/tijan-holder-26a3501a5",
             "artstation":null,
             "biography":"Lover of all things Adobe with some additional skills in Nuke. "
@@ -177,6 +188,7 @@
                 "posX":"-70px"
             },
             "website":"https://www.linkedin.com/in/alexangert/",
+            "behance":null,
             "linkedin":"https://www.artstation.com/purge",
             "artstation":null,
             "biography":"I am primarily an FX Artist with an avid affection towards creating procedural realistic and fantasy environments. I enjoy both the technical and creative challenges of the Visual Effects industry and the ones that are found within my disciplines."

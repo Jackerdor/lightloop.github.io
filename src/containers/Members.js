@@ -23,10 +23,10 @@ const item = {
 function Members() {
 
   const [id, setId] = React.useState(2)
-  
   const [hasWebsite, setHasWebsite] = React.useState('block')
   const [hasLinkedin, setHasLinkedin] = React.useState('block')
   const [hasArtstation, setHasArtstation] = React.useState('block')
+  const [hasBehance, setHasBehance] = React.useState('none')
 
   const websiteCheck = (id) => {
     if (memberData.[id].website == null){
@@ -35,19 +35,26 @@ function Members() {
       setHasWebsite('block')
     }}
 
-  const linkedInCheck = (id) => {
-    if (memberData.[id].linkedin == null){
-      setHasWebsite('none')
+  const behanceCheck = (id) => {
+    if (memberData.[id].behance == null){
+      setHasBehance('none')
     } else {
-      setHasWebsite('block')
+      setHasBehance('block')
     }}
 
-const artstationCheck = (id) => {
-    if (memberData.[id].artstation == null){
-      setHasArtstation('none')
+  const linkedInCheck = (id) => {
+    if (memberData.[id].linkedin == null){
+      setHasLinkedin('none')
     } else {
-      setHasArtstation('block')
+      setHasLinkedin('block')
     }}
+
+  const artstationCheck = (id) => {
+      if (memberData.[id].artstation == null){
+        setHasArtstation('none')
+      } else {
+        setHasArtstation('block')
+      }}
 
   function handleClick(event) {
 
@@ -57,14 +64,13 @@ const artstationCheck = (id) => {
     }
     else{
     setIsChanging(isChanging => !isChanging)
-    console.log(hasWebsite)
     setTimeout(() => {
       setId(idMember)
       websiteCheck(idMember)
+      behanceCheck(idMember)
       linkedInCheck(idMember)
       artstationCheck(idMember)
       setIsChanging(isChanging => !isChanging)
-      console.log(hasWebsite)
     }, 400);
   }
   }
@@ -99,8 +105,10 @@ const [isChanging, setIsChanging] = useState(false)
             {memberData.[id].role}
           </motion.div>
           <motion.div variants={item} className="team-links">
-            <a className="website-link" href={memberData.[id].website} target="_blank" style={{textDecoration:'none', display:hasWebsite}}>VISIT WEBSITE</a>
+            <div className="links-title">WEBSITE LINKS</div>
+            <a className="orb-link" href={memberData.[id].website} target="_blank" style={{textDecoration:'none', display:hasWebsite}}><i class="fas fa-globe"></i></a>
             <a className="orb-link" href={memberData.[id].linkedin} target="_blank" style={{textDecoration:'none', display:hasLinkedin}}><i class="fab fa-linkedin-in"></i></a>
+            <a className="orb-link" href={memberData.[id].behance} target="_blank" style={{textDecoration:'none', display:hasBehance}}><i class="fab fa-behance"></i></a>
             <a className="orb-link" href={memberData.[id].artstation} target="_blank" style={{textDecoration:'none', display:hasArtstation}}><i class="fab fa-artstation"></i></a>
           </motion.div>
           <motion.div variants={item} className="biography-header"><h1>BIOGRAPHY</h1><div className="biography-line"></div></motion.div>
@@ -110,6 +118,7 @@ const [isChanging, setIsChanging] = useState(false)
         </motion.div>
         <div className="outline-box"></div>
         <motion.div className="team-navigator"> 
+        <div className="team-tip">- CLICK US -</div>
         <a id="0" onClick={handleClick}>AIDAN LONERGAN</a><sp>|</sp>
         <a id="1" onClick={handleClick}>SANDEEP TALUDHAR</a><sp>|</sp>
         <a id="2" onClick={handleClick}>JAKE NEWTON</a><sp>|</sp>

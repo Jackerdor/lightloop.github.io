@@ -4,7 +4,8 @@ import { motion, useTransform } from "framer-motion";
 const ProjectCard = (props) => {
   const scaleFactor = useTransform(props.boi, props.range, [1, 1.5, 1.5, 1]);
   const zFactor = useTransform(props.boi, props.range, [1, 10, 10, 1]);
-  const marginXFactor = useTransform(props.boi, props.range, [50, -10, -10, 50]);
+  const marginXFactor = useTransform(props.boi, props.range, [25, 120, 120, 25]);
+  const filterFactor = useTransform(props.boi, props.range, ['grayscale(100%)', 'grayscale(0%)', 'grayscale(0%)', 'grayscale(100%)']);
 
   console.log(props.range);
 
@@ -20,6 +21,7 @@ const ProjectCard = (props) => {
         zIndex: zFactor,
         marginLeft: marginXFactor,
         marginRight: marginXFactor,
+        filter: filterFactor,
       }}
     >
       <div className="item-gradient-lr"></div>
