@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/lightloop.github.io/static/css/main.bdefc942.chunk.css",
-    "main.js": "/lightloop.github.io/static/js/main.49828140.chunk.js",
-    "main.js.map": "/lightloop.github.io/static/js/main.49828140.chunk.js.map",
-    "runtime-main.js": "/lightloop.github.io/static/js/runtime-main.4ebaa07d.js",
-    "runtime-main.js.map": "/lightloop.github.io/static/js/runtime-main.4ebaa07d.js.map",
-    "static/js/2.ef1d44d3.chunk.js": "/lightloop.github.io/static/js/2.ef1d44d3.chunk.js",
-    "static/js/2.ef1d44d3.chunk.js.map": "/lightloop.github.io/static/js/2.ef1d44d3.chunk.js.map",
-    "static/js/3.aef5c99d.chunk.js": "/lightloop.github.io/static/js/3.aef5c99d.chunk.js",
-    "static/js/3.aef5c99d.chunk.js.map": "/lightloop.github.io/static/js/3.aef5c99d.chunk.js.map",
+    "main.css": "/lightloop.github.io/static/css/main.470dd806.chunk.css",
+    "main.js": "/lightloop.github.io/static/js/main.10c7fc21.chunk.js",
+    "main.js.map": "/lightloop.github.io/static/js/main.10c7fc21.chunk.js.map",
+    "runtime-main.js": "/lightloop.github.io/static/js/runtime-main.f0db479d.js",
+    "runtime-main.js.map": "/lightloop.github.io/static/js/runtime-main.f0db479d.js.map",
+    "static/js/2.32d6c685.chunk.js": "/lightloop.github.io/static/js/2.32d6c685.chunk.js",
+    "static/js/2.32d6c685.chunk.js.map": "/lightloop.github.io/static/js/2.32d6c685.chunk.js.map",
+    "static/js/3.54860b6b.chunk.js": "/lightloop.github.io/static/js/3.54860b6b.chunk.js",
+    "static/js/3.54860b6b.chunk.js.map": "/lightloop.github.io/static/js/3.54860b6b.chunk.js.map",
     "index.html": "/lightloop.github.io/index.html",
-    "static/css/main.bdefc942.chunk.css.map": "/lightloop.github.io/static/css/main.bdefc942.chunk.css.map",
-    "static/js/2.ef1d44d3.chunk.js.LICENSE.txt": "/lightloop.github.io/static/js/2.ef1d44d3.chunk.js.LICENSE.txt",
+    "static/css/main.470dd806.chunk.css.map": "/lightloop.github.io/static/css/main.470dd806.chunk.css.map",
+    "static/js/2.32d6c685.chunk.js.LICENSE.txt": "/lightloop.github.io/static/js/2.32d6c685.chunk.js.LICENSE.txt",
     "static/media/index.css": "/lightloop.github.io/static/media/thin.e7946a02.otf",
     "static/media/showreel3.30acfee9.mp4": "/lightloop.github.io/static/media/showreel3.30acfee9.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ebaa07d.js",
-    "static/js/2.ef1d44d3.chunk.js",
-    "static/css/main.bdefc942.chunk.css",
-    "static/js/main.49828140.chunk.js"
+    "static/js/runtime-main.f0db479d.js",
+    "static/js/2.32d6c685.chunk.js",
+    "static/css/main.470dd806.chunk.css",
+    "static/js/main.10c7fc21.chunk.js"
   ]
 }
